@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "dd2c97aa-6696-4e41-9559-47657ff6c08c",
+		"name": "Assigment_ItemMGT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32993712"
+	},
+	"item": [
+		{
+			"name": "items CRUD",
+			"item": [
+				{
+					"name": "updateItem",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2U1ODA4YTdhMTQxZjYwODMyOTlhMSIsImlhdCI6MTcwODAyMTgzMywiZXhwIjoxNzA4MDM5ODMzfQ._rxCLoINKonNsiwIFS_ebj6WwI1B5zzIiw2g9mI_F3o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2U1ODA4YTdhMTQxZjYwODMyOTlhMSIsImlhdCI6MTcwODAyMTgzMywiZXhwIjoxNzA4MDM5ODMzfQ._rxCLoINKonNsiwIFS_ebj6WwI1B5zzIiw2g9mI_F3o",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"cloth13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/item/:65ce617855fea517ee0fd3a7",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"item",
+								":65ce617855fea517ee0fd3a7"
+							],
+							"variable": [
+								{
+									"key": "65ce617855fea517ee0fd3a7",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllItems",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2U1ODA4YTdhMTQxZjYwODMyOTlhMSIsImlhdCI6MTcwODAyMTgzMywiZXhwIjoxNzA4MDM5ODMzfQ._rxCLoINKonNsiwIFS_ebj6WwI1B5zzIiw2g9mI_F3o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/item/getAllItems?page=1&limit=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"item",
+								"getAllItems"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getItemById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2U1ODA4YTdhMTQxZjYwODMyOTlhMSIsImlhdCI6MTcwODAyMTgzMywiZXhwIjoxNzA4MDM5ODMzfQ._rxCLoINKonNsiwIFS_ebj6WwI1B5zzIiw2g9mI_F3o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/item/:65ce617855fea517ee0fd3a7",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"item",
+								":65ce617855fea517ee0fd3a7"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "65ce617855fea517ee0fd3a7",
+									"value": "65ce617855fea517ee0fd3a7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteItemById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2U1ODA4YTdhMTQxZjYwODMyOTlhMSIsImlhdCI6MTcwODAyMTgzMywiZXhwIjoxNzA4MDM5ODMzfQ._rxCLoINKonNsiwIFS_ebj6WwI1B5zzIiw2g9mI_F3o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/item/:65ce617855fea517ee0fd3a7",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"item",
+								":65ce617855fea517ee0fd3a7"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "65ce617855fea517ee0fd3a7",
+									"value": "65ce617855fea517ee0fd3a7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user AUTH",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDgwMDk3OTIsImV4cCI6MTcwODA5NjE5Mn0.ElPHqwIOa-gSjSCVhjCM-ceKD3el5vuwQgTc31451wI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sneha21@gmail.com\",\r\n    \"password\": \"Sn@123454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/auth/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sneha21@gmail.com\",\r\n    \"password\": \"Sn@123454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/auth/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyRefreshToken",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2U1ODA4YTdhMTQxZjYwODMyOTlhMSIsImlhdCI6MTcwODAyNTgzNywiZXhwIjoxNzA4MDI4NTM3fQ.TTk5oy13yItf6Iz0JWV7rcKvw_eZLkGVxYrJjovwZOM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sneha21@gmail.com\",\r\n    \"password\": \"Sn@123454\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/auth/verifyRefreshToken",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"verifyRefreshToken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:3000/v1",
+			"type": "string"
+		}
+	]
+}
